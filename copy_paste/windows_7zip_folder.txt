@@ -1,0 +1,29 @@
+# The following script will take a directory of directories and zip
+# all files in the nested folders into an individual compressed files
+
+# Prerequisites: Have 7-Zip installed on windows and replace "c:\Apps\7-Zip\7z.exe"
+# with your installation path.
+
+# Steps:
+# 1. Open Windows command prompt
+# 2. cd to the directory of files
+# 3. Paste the script and run
+
+# Example Input:
+# my_folder_path/
+#   chapter_01/
+#      page_01.txt
+#      page_02.txt
+#      ...
+#   chapter_02/
+#      page_01.txt
+#      page_02.txt
+#   ...
+#
+# Output:
+# my_folder_path/
+#   chapter_01.zip
+#   chapter_02.zip
+#   ...
+
+for /D %d in (*.*) do "c:\Apps\7-Zip\7z.exe" a "%d.zip" "%d\"
