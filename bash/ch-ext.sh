@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# cd directory to change extentions
 # ch-ext.sh
 # arg1 (from extension), arg2 (to extension)
 
