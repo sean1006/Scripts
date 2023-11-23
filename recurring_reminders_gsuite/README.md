@@ -1,5 +1,3 @@
-Doc script : abstract+benefits, setup tutorial, links to API for modification 
-
 # Run Recurring Reminders
 
 
